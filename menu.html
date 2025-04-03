@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Season's Plate</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="overlay">
+  <nav class="navbar">
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="references.html">References</a></li>
+    </ul>
+  </nav>
+  <div class="menu-title">
+    <div class="menu-title-icon">
+      <img src="images/menu.png" alt="Menu Icon">
+    </div>
+    <div class="menu-title-text">Food Menu</div>
+  </div>
+  <div class="filter-wrapper">
+  <div class="filter-instruction">Choose your dietary preferences:</div>
+    <div class="filters">
+      <label><input type="checkbox" class="menu-filter" data-filter="organic" /> Organic</label>
+      <label><input type="checkbox" class="menu-filter" data-filter="under200cal" /> Under 200 cal</label>
+      <label><input type="checkbox" class="menu-filter" data-filter="local" /> Locally Grown</label>
+    </div>
+  </div>
+
+  <div class="layout">
+    <div class="menu-list">
+      <div class=></div>
+      <div class="menu-item" data-tags="organic,under200cal,local" onclick="showIngredients('tomatoBruschetta')">🥗 Tomato Bruschetta</div>
+      <div class="menu-item" data-tags="organic,local" onclick="showIngredients('strawberryJam')">🍛 Bread with Strawberry jam</div>
+      <div class="menu-item" dadta-tags="under200cal,local" onclick="showIngredients('veggieWrap')">🌯 Bread with Garlic Confit</div>
+      <div class="menu-item" dadta-tags="under200cal,local" onclick="showIngredients('veggieWrap')">🌯 Kimchi Lettuce Wraps</div>
+      <div class="menu-item" data-tags="organic,under200cal,local" onclick="showIngredients('fetaSalad')">🥗 Feta Salad</div>
+      <div class="menu-item" data-tags="organic,local" onclick="showIngredients('fruitSalad')">🍛 Fruit Salad</div>
+      <div class="menu-item" dadta-tags="under200cal,local" onclick="showIngredients('squashSalad')">🌯 Squash Salad</div>
+      <div class="menu-item" dadta-tags="under200cal,local" onclick="showIngredients('fettucine')">🌯 Fettucine with Black Garlic Sauce</div>
+      <div class="menu-item" dadta-tags="under200cal,local" onclick="showIngredients('eggplantParm')">🌯 Eggplant Parm</div>
+      <div class="menu-item" dadta-tags="under200cal,local" onclick="showIngredients('artichokePasta')">🌯 Crispy Artichoke Pasta</div>
+      <div class="menu-item" dadta-tags="under200cal,local" onclick="showIngredients('appleTart')">Apple Tart</div>
+      <div class="menu-item" dadta-tags="under200cal,local" onclick="showIngredients('peachCrumble')">Peach Crumble</div>
+      <div class="menu-item" dadta-tags="under200cal,local" onclick="showIngredients('strawberryTart')">🌯 Strawberry Tart</div>
+      <div class="menu-item" dadta-tags="under200cal,local" onclick="showIngredients('strawberryTart')">Hibiscus Punch</div>
+      <div class="menu-item" dadta-tags="under200cal,local" onclick="showIngredients('strawberryTart')">Brazilian Lemonade</div>
+    </div>
+    <div class="ingredient-panel">
+      <div class="menu-info" id="menuInfo"></div>
+      <div class="ingredient-section">
+        <h3>Ingredient List</h3>
+        <div class="ingredient-list" id="ingredientPanel"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="scripts.js"></script>
+</div>
+<footer class="site-footer">
+  <p>📍 5000 Kozloski Rd, Freehold, NJ 07728</p>
+</footer>
+</body>
+</html>
